@@ -39,7 +39,7 @@ const Dashboard = () => {
           <TransactionsTable accountId={selectedAccount.id} accountName={selectedAccount.name} />
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 dashtext ">
           {accounts.map(account => (
             <AccountCard 
               key={account.id} 
